@@ -14,7 +14,8 @@ class ComicController extends Controller
     {
         $comicList = Comic::all();
         $data = [
-            'comics' => $comicList
+            'comics' => $comicList,
+            'store' => config('store')
         ];
         return view('comics.index', $data);
     }
@@ -24,7 +25,10 @@ class ComicController extends Controller
      */
     public function create()
     {
-        return view('comics.create');
+        $data = [
+            'store' => config('store')
+        ];
+        return view('comics.create', $data);
     }
 
     /**
@@ -42,7 +46,8 @@ class ComicController extends Controller
     {
         $singleComic = Comic::find($id);
         $data = [
-            'comic' => $singleComic
+            'comic' => $singleComic,
+            'store' => config('store')
         ];
         return view('comics.show', $data);
     }

@@ -1,13 +1,140 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    font-family: sans-serif;
-    background: #222;
+/* General css */
+
+.my_box_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.my_bg_blue {
+    background-color: #1e82f6;
+}
+
+/* Header css */
+
+header img {
+    width: 3rem;
+}
+
+#linkMenu a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding: 2rem 0;
+    border-bottom: 2px solid white;
+}
+
+#linkMenu a:hover {
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
+}
+
+/* Jumbotron css */
+
+.jumbotron {
+    background-image: url("/images/jumbotron.jpg");
+    height: 30rem;
+    background-position: top;
+}
+
+/* IconDC css */
+
+#iconDc img {
+    height: 2rem;
+}
+
+.box_link {
+    background-image: url("/images/footer-bg.jpg");
+    background-size: cover;
+    color: lightgray;
+}
+
+/* Link Footer css */
+
+#linkFooter .logo_box {
+    background-image: url("/images/dc-logo-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#linkFooter h3 {
+    font-size: 18px;
     color: white;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+#linkFooter a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 12px;
+}
+
+/* Social Footer */
+
+.box_social {
+    background-color: #303030;
+    padding: 2rem;
+}
+
+#socialFooter .my_border {
+    padding: 1rem;
+    border: 2px solid blue;
+    color: white;
+    text-align: center;
+}
+
+#socialFooter .follow_text {
+    color: blue;
+}
+
+#socialFooter img {
+    height: 2rem;
+}
+
+/* Card css */
+
+.full_box {
+    background-color: #222;
+    color: white;
+}
+
+#comicCardMain .comic_label {
+    padding: 1rem;
+    background-color: #1e82f6;
+    position: absolute;
+    top: -1.5rem;
+    left: -0.8rem;
+}
+#comicCardMain .comic_button {
+    padding: 0.7rem 3rem;
+    background-color: #1e82f6;
+}
+
+#comicCard img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+#comicCard span {
+    font-size: 12px;
+}
+
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
 }
