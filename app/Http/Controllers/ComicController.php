@@ -11,7 +11,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        return view('comics.index');
     }
 
     /**
@@ -19,7 +19,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class ComicController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('comics.show');
     }
 
     /**
