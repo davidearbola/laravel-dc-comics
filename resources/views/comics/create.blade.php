@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    pagina form
+    <form action="">
+        <input type="text" placeholder="Titolo fumetto">
+        <input type="text" placeholder="Titolo fumetto">
+        <input type="text" placeholder="Titolo fumetto">
+        <input type="text" placeholder="Titolo fumetto">
+        <input type="text" placeholder="Titolo fumetto">
+        <input type="text" placeholder="Titolo fumetto">
+    </form>
 @endsection
