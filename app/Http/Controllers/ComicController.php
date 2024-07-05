@@ -65,9 +65,13 @@ class ComicController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Comic $comic)
     {
-        //
+        $data = [
+            'comic' => $comic,
+            'store' => config('store')
+        ];
+        return view('comics.edit', $data);
     }
 
     /**

@@ -14,6 +14,7 @@
                     <span>Serie: {{ $comic->series }}</span><br>
                     <span>Pubblicazione: {{ $comic->sale_date }}</span><br>
                     <span>Categoria: {{ $comic->type }}</span><br>
+                    <a href="{{ route('comics.edit', $comic->id) }}">Modifica Comic</a>
                 </div>
             </div>
         </div>
