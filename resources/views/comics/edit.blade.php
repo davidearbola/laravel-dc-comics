@@ -5,8 +5,9 @@
         <div class="my_box_container py-3 position-relative">
             <div id="container_form">
                 <h2>Edit the Comic: {{ $comic['title'] }}</h2>
-                <form method="POST" action="{{ route('comics.store') }}">
+                <form method="POST" action="{{ route('comics.update', $comic->id) }}">
                     @csrf
+                    @method('PUT')
                     <div class="mb-3">
                         <label for="title" class="form-label">Title</label>
                         <input type="text" class="form-control" name="title" id="title"
