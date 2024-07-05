@@ -14,7 +14,14 @@
                     <span>Serie: {{ $comic->series }}</span><br>
                     <span>Pubblicazione: {{ $comic->sale_date }}</span><br>
                     <span>Categoria: {{ $comic->type }}</span><br>
-                    <a href="{{ route('comics.edit', $comic->id) }}">Modifica Comic</a>
+                    <div class="d-flex">
+                        <a class="btn btn-primary me-3" href="{{ route('comics.edit', $comic->id) }}">Modifica Comic</a>
+                        <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <input class="btn btn-danger" type="submit" value="Elimina Comic"></input>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
